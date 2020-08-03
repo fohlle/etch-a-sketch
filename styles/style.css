@@ -1,0 +1,21 @@
+
+#container{
+    height:960px;
+    width:960px;
+    background-color: lightgrey;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    border:black solid 1px;
+}
+
+#container div{
+    border:black solid 1px;
+}
+/*
+#container div:hover{
+    background-color: lime;
+    
+}
+*/
