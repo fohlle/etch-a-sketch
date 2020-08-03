@@ -1,3 +1,7 @@
+:root {
+    --grid-rows: 1;
+    --grid-col: 1;
+  }
 
 #container{
     height:960px;
@@ -5,17 +9,25 @@
     background-color: lightgrey;
     margin:auto;
     display:grid;
-    grid-template-columns:repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns:repeat(var(--grid-col), 1fr);
+    grid-template-rows: repeat(var(--grid-row), 1fr);
     border:black solid 1px;
 }
 
 #container div{
     border:black solid 1px;
 }
-/*
-#container div:hover{
-    background-color: lime;
-    
+
+#btnDiv{
+    margin:auto;
+    height:80px;
+    width:50px;
 }
-*/
+#clearGridBtn{
+    height:50px;
+    width:150px;
+}
+#clearGridBtn:hover{
+    font-size:15px;
+    border:white solid 1px;
+}
